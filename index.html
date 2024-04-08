@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./data.js" defer></script>
+    <!-- <script src="./script.js" defer></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="personal">
+        <div class="personal__top">
+          <div class="personal__categoris">
+            <button class="personal__btn btn-active">All</button>
+            <button class="personal__btn">Frontend</button>
+            <button class="personal__btn">Backend</button>
+            <button class="personal__btn">Manager</button>
+          </div>
+          <div class="personal__filters">
+            <div class="filter__age">
+              <p class="filter__text">
+                Диапазон возраста: <input class="min__age" type="number" /> -
+                <input class="max__age" type="number" />
+              </p>
+              <button class="filter__btn">Применить</button>
+            </div>
+            <div class="filter__search">
+              <input class="search" placeholder="Найти..." type="text" />
+              <button class="btn__search">x</button>
+            </div>
+            <div class="filter__sort">
+              <select class="sort__select" name="" id="">
+                <option value="">По умолчанию</option>
+                <option value="words">По алафавиту</option>
+                <option value="max-age">Возраст (по возрастанию)</option>
+                <option value="min-age">Возраст (по убыванию)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="personal__body"></div>
+      </div>
+    </div>
+    <template class="template">
+      <div class="personal__item">
+        <img
+          class="personal__img"
+          src="https://mixnews.lv/wp-content/uploads/2020/04/20/2020-04-20-mixnews-grandbeauty07.jpg"
+          alt=""
+        />
+        <div class="personal__info">
+          <p class="personal__name">Иван</p>
+          <p class="personal__age">
+            Возраст:
+            <span class="personal__value"> 20 </span>
+          </p>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
